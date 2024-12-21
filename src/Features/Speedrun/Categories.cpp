@@ -20,7 +20,7 @@
 #endif
 
 Variable sar_speedrun_draw_triggers("sar_speedrun_draw_triggers", "0", "Draw the triggers associated with speedrun rules in the world.\n");
-Variable sar_speedrun_triggers_info("sar_speedrun_triggers_info", "0", "Print information of player in the given slot upon zone trigger activation.\n1 - position and velocity\n2 - only horizontal velocity\n");
+Variable sar_speedrun_triggers_info("sar_speedrun_triggers_info", "0", "Print player velocity (and position) upon zone trigger activation.\n1 - position and velocity\n2 - only horizontal velocity\n");
 
 static std::optional<std::vector<std::string>> extractPartialArgs(const char *str, const char *cmd) {
 	while (*cmd) {
