@@ -130,12 +130,12 @@ static void dispatchRule(std::string name, SpeedrunRule *rule) {
 
 	if (info == 1) {
 		// Info type 1 prints everything
-		console->Print("Player entered zone '%s':\n", name.c_str());
+		console->Print("Player triggered rule '%s':\n", name.c_str());
 		console->Print("  Position: %.2f %.2f %.2f\n", pos.x, pos.y, pos.z);
 		console->Print("  Velocity: %.2f %.2f %.2f\n", vel.x, vel.y, vel.z);
 	} else if (info == 2) {
 		// Info type 2 prints just the horizontal velocity
-		console->Print("Player entered zone with velocity: %.2f\n", vel.Length2D());
+		console->Print("Player velocity on last rule: %.2f\n", vel.Length2D());
 	}
 }
 
